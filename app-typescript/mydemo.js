@@ -1,5 +1,5 @@
 var input1 = document.getElementById("num1"); //TypeCasting
-var input2 = document.getElementById("num2");
+var input2 = document.getElementById("num2"); //TypeCasting
 var button = document.querySelector("button");
 function add(num1, num2) {
     return num1 + num2;
