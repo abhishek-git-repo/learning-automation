@@ -1,0 +1,22 @@
+Mocha is a testing framework for Javascript and Node.js
+Chai is an assertion library-----https://www.chaijs.com/api/assert/
+
+Make a new folder Mochatest
+In that dir:
+npm init
+packagename: Press enter
+version:press enter
+description:Unit testing using chai and mocha
+entry point:app.ts
+press enter through rest
+open the folder in vscode
+
+
+Installation of typescript 
+npm install -g typescript
+
+
+Installation of chai and mocha and saving them as dev dependencies
+
+npm install mocha chai --save-dev (for javascript)
+npm install chai mocha ts-node @types/chai @types/mocha --save-dev(for typescript)
