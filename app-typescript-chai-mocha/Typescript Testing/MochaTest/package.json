@@ -1,0 +1,10 @@
+{
+  "name": "mochatest",
+  "version": "1.0.0",
+  "description": "Unit testing using chai and mocha",
+  "main": "app.js",
+  "scripts": {
+    "test": "mocha"
+  }
+  
+}
