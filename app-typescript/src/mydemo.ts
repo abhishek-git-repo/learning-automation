@@ -1,6 +1,6 @@
 const input1 = document.getElementById("num1")! as HTMLInputElement; //TypeCasting
 const input2 = document.getElementById("num2")! as HTMLInputElement; //TypeCasting
-const button = document.querySelector("button");
+const button = document.querySelector("button")! as HTMLButtonElement; // ! works like strictNullChecks=false, if remove ! you may need to bind button call in null if check
 
 function add(num1: number, num2: number){
     return num1 + num2;
