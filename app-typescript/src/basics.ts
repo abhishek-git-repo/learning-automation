@@ -2,14 +2,14 @@ console.log("We write code here in this file...");
 console.log("lite-server works great... when installed");
 
 // Core Types and Syntax
-function addNum(n1: number, n2: number, showInfo: boolean, info: string) {
+function addNumAndShowInfo(n1: number, n2: number, showInfo: boolean, info: string) {
     if(showInfo){
         console.log(info);
     }
     return n1 + n2;
 }
 
-function add2(n1, n2) {
+function add2(n1: any, n2: any) { // any added after compilation error
     // Javascript specific
     if(typeof n1 !== 'number' || typeof n2 !== 'number'){
         throw new Error('Invalid Input!');        
@@ -21,8 +21,8 @@ const number1 = 5;
 const number2 = 4.5;
 const number3 = '6';
 
-const s = addNum(number1, number2, true, 'Sum of two numbers!');
-let t: number;
+const s = addNumAndShowInfo(number1, number2, true, 'Sum of two numbers!');
+let t: number = 0;
 try{
     t = add2(number2, number3);
 }

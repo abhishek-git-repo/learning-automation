@@ -1,6 +1,6 @@
-function combine(input1, input2, resultConversion // or resultConversion: 'as-number' | 'as-text'
-) {
-    var result;
+"use strict";
+function combine(input1, input2, resultConversion) {
+    let result;
     if (typeof input1 === 'number' && typeof input2 === 'number') {
         result = input1 + input2;
     }
@@ -16,9 +16,9 @@ function combine(input1, input2, resultConversion // or resultConversion: 'as-nu
     return result;
 }
 ;
-var sumOfAge = combine(15, 83, 'as-number');
+const sumOfAge = combine(15, 83, 'as-number');
 console.log(sumOfAge);
-var combileNum = combine('15', '83', 'as-number');
+const combileNum = combine('15', '83', 'as-number');
 console.log(combileNum);
-var concatinatedMessage = combine('He is Rahul.', 'He is in 5th Std.', 'as-text');
+const concatinatedMessage = combine('He is Rahul.', 'He is in 5th Std.', 'as-text');
 console.log(concatinatedMessage);
